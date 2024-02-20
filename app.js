@@ -45,7 +45,7 @@ app.use("/document", express.static(path.join(__dirname, './document')));
 app.use("/module-note", express.static(path.join(__dirname, './module-note')));
 
 app.use(cors());
-app.use('/', indexRouter);
+app.use('/index', indexRouter);
 app.use('/users', usersRouter);
 app.use('/questions', questionsRouter);
 app.use('/questionImage', express.static('./upload'));
